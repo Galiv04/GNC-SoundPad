@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNC SoundPad</title>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function play(audioUrl) {
+        var audio = new Audio(audioUrl);
+        // audio.crossOrigin = 'anonymous';
+        audio
+          .play()
+          .then(function () {
+            // Automatic playback started!
+            console.log("playing");
+          })
+          .catch(function (error) {
+            // Automatic playback failed.
+            // Show a UI element to let the user manually start playback.
+            console.log(error);
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title style="text-align: center">GNC SoundPad</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-grid class="center">
+      <ion-row>
+        <ion-col>
+          <ion-button onclick="() => play(NoVabbe1)" color="primary">
+            NoVabbe1
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(NoVabbe2)" color="primary">
+            NoVabbe2
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(NoVabbe3)" color="primary">
+            NoVabbe3
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button onclick="() => play(Enno)" color="primary">
+            Enno
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(Ennopevo)" color="primary">
+            Ennopevo
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(GiaFatto)" color="primary">
+            GiaFatto
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button onclick="() => play(Campanella)" color="primary">
+            Campanella
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(Matto)" color="primary">
+            Matto
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(Pollo)" color="primary">
+            Pollo
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button onclick="() => play(Roscio)" color="primary">
+            Roscio
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play(Pika)" color="primary">
+            Pika
+          </ion-button>
+        </ion-col>
+
+        <ion-col>
+          <ion-button onclick="() => play()" color="primary"> - </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </body>
+</html>

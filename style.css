@@ -1,0 +1,16 @@
+ion-col {
+  width: 30%;
+}
+
+ion-button {
+  width: 110px;
+  margin: auto;
+  margin-left: 1%;
+}
+
+.center {
+  margin: auto;
+  width: 99%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
